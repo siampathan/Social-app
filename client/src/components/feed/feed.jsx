@@ -1,9 +1,17 @@
+import Post from "../post/post";
+import Share from "../share/share";
 import "./feed-style.css";
 
 const Feed = () => {
   return (
     <div className="feed">
-      <h2>Feed</h2>
+      <div className="feedWraper">
+        <Share />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+      </div>
     </div>
   );
 };
