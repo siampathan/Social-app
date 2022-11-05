@@ -4,6 +4,8 @@
   overflow-y: scroll;
   scrollbar-color: rgb(179, 179, 179) #f1f1f1;
   scrollbar-width: thin;
+  position: sticky;
+  top: 50px;
 }
 
 /* this customize for scroll bar */
@@ -55,18 +57,4 @@ hr {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.sidebarFriend {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.sidebarFriendImage {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 10px;
 }
