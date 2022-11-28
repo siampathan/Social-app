@@ -1,6 +1,9 @@
 /node_modules
 /build
 
+imt.txt
+.gitignore
+
 .env
 
 npm-debug.log*
