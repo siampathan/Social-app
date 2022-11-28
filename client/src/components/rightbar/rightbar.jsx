@@ -3,6 +3,7 @@ import Online from "../online/online";
 import "./rightbar-style.css";
 
 const RightBar = ({ Profile }) => {
+  const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
   const HomeRightBar = () => {
     return (
       <>
@@ -49,7 +50,7 @@ const RightBar = ({ Profile }) => {
         <div className="rightBarFollowings">
           <div className="rightBarFollowing">
             <img
-              src="assets/person/1.jpeg"
+              src={`${publicFolder}person/1.jpeg`}
               alt=""
               className="rightBarFollowingImg"
             />
@@ -58,7 +59,7 @@ const RightBar = ({ Profile }) => {
 
           <div className="rightBarFollowing">
             <img
-              src="assets/person/2.jpeg"
+              src={`${publicFolder}person/2.jpeg`}
               alt=""
               className="rightBarFollowingImg"
             />
@@ -67,7 +68,7 @@ const RightBar = ({ Profile }) => {
 
           <div className="rightBarFollowing">
             <img
-              src="assets/person/8.jpeg"
+              src={`${publicFolder}person/8.jpeg`}
               alt=""
               className="rightBarFollowingImg"
             />
@@ -76,7 +77,7 @@ const RightBar = ({ Profile }) => {
 
           <div className="rightBarFollowing">
             <img
-              src="assets/person/4.jpeg"
+              src={`${publicFolder}person/4.jpeg`}
               alt=""
               className="rightBarFollowingImg"
             />
@@ -85,7 +86,7 @@ const RightBar = ({ Profile }) => {
 
           <div className="rightBarFollowing">
             <img
-              src="assets/person/5.jpeg"
+              src={`${publicFolder}person/5.jpeg`}
               alt=""
               className="rightBarFollowingImg"
             />
@@ -94,7 +95,7 @@ const RightBar = ({ Profile }) => {
 
           <div className="rightBarFollowing">
             <img
-              src="assets/person/6.jpeg"
+              src={`${publicFolder}person/6.jpeg`}
               alt=""
               className="rightBarFollowingImg"
             />

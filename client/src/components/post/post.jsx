@@ -6,6 +6,7 @@ import "./post-style.css";
 const Post = ({ post }) => {
   const [like, setLike] = useState(post.like);
   const [isLiked, setIsLiked] = useState(false);
+  const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
 
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
@@ -33,7 +34,7 @@ const Post = ({ post }) => {
         </div>
         <div className="postCenter">
           <span className="postText"> {post?.desc} </span>
-          <img className="postImg" src={post.photo} alt="" />
+          <img className="postImg" src={publicFolder + post.photo} alt="" />
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">

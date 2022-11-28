@@ -2,13 +2,16 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import { Link } from "react-router-dom";
 import "./topbar-style.css";
 
 const TopBar = () => {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
-        <span className="logo">SiamSocial</span>
+        <Link className="logo" to="/">
+          SiamSocial
+        </Link>
       </div>
       <div className="topbarCenter">
         <div className="searchbar">

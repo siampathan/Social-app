@@ -5,11 +5,16 @@ import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import "./share-style.css";
 
 const Share = () => {
+  const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
   return (
     <div className="share">
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className="shareProfileImg" src="assets/person/1.jpeg" alt="" />
+          <img
+            className="shareProfileImg"
+            src={`${publicFolder}person/1.jpeg`}
+            alt=""
+          />
           <input
             type="text"
             placeholder="What's in your mind"
